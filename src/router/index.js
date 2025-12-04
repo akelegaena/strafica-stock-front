@@ -1,4 +1,22 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from "vue-router";
+import Login from "../views/Login.vue";
+import Dashboard from "../views/Dashboard.vue";
+
+const routes = [
+  { path: "/", name: "login", component: Login },
+  { path: "/dashboard", name: "dashboard", component: Dashboard },
+];
+
+export default createRouter({
+  history: createWebHistory(),
+  routes,
+});
+
+
+
+
+
+/*import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 
 const router = createRouter({
@@ -20,4 +38,4 @@ const router = createRouter({
   ],
 })
 
-export default router
+export default router*/
